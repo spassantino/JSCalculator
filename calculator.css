@@ -1,5 +1,8 @@
 #mainDiv{
+  position: relative;
   border-style: solid;
+  font-family: monospace;
+  font-size: 15px;
   border-width: 5px;
   height:auto;
   width:20%;
@@ -7,7 +10,7 @@
   background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 }
 #screen{
-  font-family: monospace;
+  /*font-family: monospace;*/
   border-style: solid;
   border-width: 5px;
   height:auto;
@@ -21,8 +24,8 @@
 	color: black;
 	text-align: center;
 	font-size: 15px;
-	padding: 2px;
-	margin: 5px 6px;
+	/*padding: 2px;*/
+	margin: 5% 5%;
 	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
 	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 }
@@ -33,8 +36,8 @@
 	color: black;
 	text-align: center;
 	font-size: 15px;
-	padding: 2px;
-	margin: 5px 6px;
+	/*padding: 2px;*/
+	margin: 5% 5%;
 	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
 	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 }
@@ -45,7 +48,7 @@
 	text-align: center;
 	font-size: 15px;
 	padding: 2px;
-	margin: 5px 6px;
+	margin: 5% 5%;
 	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
 	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 }
@@ -56,7 +59,7 @@
 	text-align: center;
 	font-size: 15px;
 	padding: 2px;
-	margin: 5px 6px;
+	margin: 5% 5%;
 	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
 	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
 }
