@@ -1,0 +1,62 @@
+#mainDiv{
+  border-style: solid;
+  border-width: 5px;
+  height:auto;
+  width:20%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
+#screen{
+  font-family: monospace;
+  border-style: solid;
+  border-width: 5px;
+  height:auto;
+  width:auto;
+  background-color: white;
+}
+
+.nums{
+  width: 15%;
+  height: 15%;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	margin: 5px 6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
+
+#clear{
+  width: 15%;
+  height: 15%;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	margin: 5px 6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
+#equals{
+  width: 15%;
+  height: 15%;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	margin: 5px 6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
+.operation{
+  width: 15%;
+  height: 15%;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	margin: 5px 6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+	background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+}
