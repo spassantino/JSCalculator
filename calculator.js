@@ -37,10 +37,10 @@ var picked= false;
 
 var $screen = $('#screen');
 $screen.text('0');
-var $allButtons = $('#formula :input[type="button"]').not(':input[id=equals], :input[id=clear]');
+// var $allButtons = $('#formula :input[type="button"]').not(':input[id=equals], :input[id=clear]');
 
-  $allButtons.click(function(e){
-});
+//   $allButtons.click(function(e){
+// });
 var $operators = $('#formula :input[class="operation"]');
 
   $operators.click(function(e){
@@ -55,15 +55,23 @@ var $operators = $('#formula :input[class="operation"]');
     picked=true;
 //turn num1 in to a string of only digits
     $choices.push($(this).val());
+    console.log($choices);
     $screen.text(num1 + ' ' + $(this).val());
 
   });
 var $digits = $('#formula :input').not(':input[type="text"], :input[id="equals"], :input[id="clear"], :input[class="operation"]');
   $digits.click(function(e){
+    // if (tallied){
+    //   num1= runningTotal;
+    //   num2=0;
+    //   num2= num2 + $(this).val();
+    //   $screen.text(num1 + ' ' + $choices[1] + ' ' + num2);
+    //
+    // }
     if (picked){
       num2= num2 + $(this).val();
       console.log(num2);
-      $screen.text(num1 + ' ' + $choices[1] + ' '+ num2);
+      $screen.text(num1 + ' ' + $choices[1] + ' ' + num2);
       // picked =false;
     }
     else {
@@ -78,24 +86,24 @@ var $clear = $('#formula :input[id="clear"]');
 // console.log($clear.val());
 
   $clear.click(function(e){
-    console.log($clear.val());
-    // for (i=0;i<$choices.length;i++){
-      delete $choices[0];
-      delete $choices[1];
-      delete $choices[2];
-    // }
-    var runningTotal= 0;
+
+    $choices.pop();
+    $choices.pop();
+    $choices.pop();
+    runningTotal= 0;
     num1='';
     num2='';
     $screen.text('0');
   });
 
 var $equals = $('#formula :input[id="equals"]');
+// var tallied = false;
 $equals.click(function(e){
   e.preventDefault();
   picked=false;
   console.log($equals.val());
   $choices.push(num2);
+  // $choices.pop();
 
   runningTotal = calculate(num1,$choices[1],num2);
   $screen.text(runningTotal);
@@ -110,19 +118,19 @@ var calculate = function(num1, op, num2){
   num2 = parseInt(num2);
 
 if(op===('+')){
-var runningTotal=num1+num2;
+  runningTotal=num1+num2;
  return runningTotal;
 }
 if(op===('-')){
-  var runningTotal =num1-num2;
+   runningTotal =num1-num2;
    return runningTotal;
 }
 if(op===('x')){
-  var runningTotal =num1*num2;
+  runningTotal =num1*num2;
   return runningTotal;
 }
 if(op===('/')){
-  var runningTotal=(num1)/(num2);
+  runningTotal=(num1)/(num2);
   return runningTotal;
 }
 
